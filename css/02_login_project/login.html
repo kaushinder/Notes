@@ -7,7 +7,7 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
-            background-color: #1a1a1a;
+            background-color: #e4eaee;
             margin: 0;
             padding: 0;
             height: 100vh;
@@ -16,14 +16,14 @@
             align-items: center;
         }
         .card{
-            background-color: #d5d5d5;
+            background-color: #ffffff;
             border-radius: 8px;;
             padding: 30px;
             width: 300px;
         }
         h2{
-            color: #1a50a0;
-            margin-bottom: 20px;
+            color: #000308;
+            margin-bottom: 10px;
             text-align: center;;
         }
         form{
@@ -31,21 +31,56 @@
             flex-direction: column;
         }
         input{
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             padding: 10px;
             border-radius: 5px;
-            border: 1px solid rgb(203, 38, 87);
-            background-color: #d8d8d8;
+            border: 1px solid rgb(202, 193, 196);
+            background-color: #fdf3f3;
         }
-        button{
+        #Login{
             background-color: #1b81da;
             color: #fff;
             padding: 10px;
             border-radius: 8px;
-            border: 2px solid black;
+            border: 2px solid rgb(0, 72, 126);
         }
-        button:hover{
+        #Login:hover{
             background-color: #1a50a0;
+        }
+        #other{
+            display: flex;
+            justify-content: space-around;
+            color:rgb(38, 167, 203);
+            background-color: aliceblue;
+            border: #fdf3f3;
+            border-radius: 10px;
+        }
+        #Forgot{
+            display: flex;
+            justify-content: space-around;
+            color:rgb(0, 8, 11);
+            background-color: aliceblue;
+            border: #fdf3f3;
+            border-radius: 10px;
+        }
+        .new{
+            display:flex;
+            justify-content: space-between;
+            margin: 10px;
+        }
+        h3, h4{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 10px;
+            color:#020407;
+            font-weight: lighter;
+            font-style: Normal;
+        }
+        
+        #other:hover{
+            background-color: #020407;
+        }
+        #Forgot:hover{
+            background-color: #1b81da;
         }
     </style>
 </head>
@@ -53,9 +88,15 @@
     <div class="card">
         <h2>Login</h2>
         <form>
-            <input type="email" name="" id="" placeholder="Email">
-            <input type="password" name="" id="" placeholder="Password">
-            <button>Login</button>
+            <h3>Email</h3>
+            <input type="email" name="Email" id="" placeholder="email@example.com">
+            <h4>Password</h4>
+            <input type="password" name="Password" id="" placeholder="password">
+            <button id="Login">Login</button>
+            <div class="new">
+            <button id="Forgot">Forgot password?</button>
+            <button id="other">Sign up</button>
+            </div>
         </form>
     </div>
 </body>
