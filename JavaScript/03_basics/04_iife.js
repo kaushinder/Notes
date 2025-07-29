@@ -4,7 +4,7 @@
 (function chai(){
     // named IIFE
     console.log(`DB CONNECTED`);
-})();           //dui ota iife lekhdaa semicolon use garne natra execute hudaina 
+})();            
 
 ( (name) => {
     console.log(`DB CONNECTED TWO ${name}`);
