@@ -1,5 +1,6 @@
 // Immediately Invoked Function Expressions (IIFE)
-
+// iife is used to remove global scope polution
+// (function definiton)(function call)
 
 (function chai(){
     // named IIFE
@@ -8,7 +9,7 @@
 
 ( (name) => {
     console.log(`DB CONNECTED TWO ${name}`);
-} )('hitesh')
+} )('kaushinder')
 
 
 
